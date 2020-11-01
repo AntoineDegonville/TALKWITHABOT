@@ -35,7 +35,7 @@ p {
   width: 800px;
   margin: 0 auto;
   justify-content: space-around;
-  height: 100%vw;
+  height: 100%px;
   display: flex;
   margin-bottom: 100px;
   margin-bottom: 0px;
@@ -289,7 +289,6 @@ textarea {
   margin: O auto;
   animation-name: popup;
   animation-duration: 1s;
-  position: absolute;
   bottom: 70px;
 }
 
