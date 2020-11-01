@@ -1,0 +1,346 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: black;
+}
+p {
+  color: white;
+}
+.center {
+  display: none;
+  justify-content: center;
+}
+#thanks {
+  color: white;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  border: white 1px solid;
+  font-size: 50px;
+  display: flex;
+  width: 50vh;
+  height: 40vh;
+  z-index: 99;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+.thanks > div {
+  margin-top: 80px;
+  margin: 40px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  justify-content: space-around;
+  height: 100%vw;
+  display: flex;
+  margin-bottom: 100px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+section {
+  padding: 20px;
+  border: 2px white thin;
+}
+.start {
+  width: 100px;
+  height: 20px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+.start p {
+  display: flex;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+}
+
+.start button {
+  width: 400px;
+  height: 100px;
+  padding: 0 200px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  border: white 2px thin;
+  color: white;
+  background-color: black;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  animation-name: popupstart;
+  animation-duration: 2s;
+  z-index: 1;
+}
+
+button:hover {
+  border: white 2px solid;
+  box-shadow: 2px 2px 0px white;
+}
+
+.start button:active {
+  background-color: white;
+  color: black;
+  border: 4px solid black;
+}
+.start button:active p {
+  background-color: white;
+  color: black;
+}
+
+.qa1 {
+  display: none;
+}
+.qa2 {
+  display: none;
+}
+.qa3 {
+  display: none;
+}
+
+#next1button {
+  font-size: 30px;
+  background-color: black;
+  border: white 2px thin;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 20%;
+  display: none;
+  outline: none;
+}
+#next1button:active {
+  background-color: white;
+  color: black;
+  border: 4px solid black;
+  outline: none;
+}
+#next1button p:active {
+  color: black;
+  outline: none;
+}
+
+#next2button {
+  font-size: 30px;
+  background-color: black;
+  border: white 2px thin;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 20%;
+  display: none;
+  outline: none;
+}
+
+#next2button:active {
+  background-color: white;
+  color: black;
+  border: 4px solid black;
+  outline: none;
+}
+#next2button p:active {
+  color: black;
+  outline: none;
+}
+
+/*                  QUESTION 1                */
+.question {
+  width: 540px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+#question1 {
+  align-items: center;
+  padding: 50px 0;
+  display: flex;
+}
+#question1 {
+  font-size: 40px;
+  width: 540px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+/*                  QUESTION 2                */
+
+#question2 {
+  width: 540px;
+  height: 200px;
+  align-items: center;
+  padding: 50px 0;
+}
+#question2 {
+  font-size: 40px;
+  width: 540px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+/*                  QUESTION 3                */
+
+.question {
+  width: 540px;
+  height: 200px;
+  align-items: center;
+}
+#question3 {
+  width: 50%;
+  align-items: center;
+  padding: 50px 0;
+}
+#question3 {
+  font-size: 40px;
+  width: 540px;
+  height: 100%;
+  margin-left: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+.answer {
+  width: 50%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-sizing: content-box;
+  outline: none;
+}
+
+.question p {
+  font-size: 40px;
+
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+input {
+  font-size: 30px;
+  text-align: center;
+  outline: none;
+  border: none;
+  width: 80%;
+  height: 30%;
+  background-color: black;
+  color: white;
+  visibility: hidden;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+textarea {
+  width: 80%;
+  height: 80%;
+  visibility: hidden;
+  align-items: center;
+}
+
+textarea {
+  font-size: 30px;
+  border-radius: 5px;
+  outline: none;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.submit {
+  justify-content: center;
+  display: flex;
+}
+
+#submit {
+  font-size: 50px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  margin: O auto;
+  animation-name: popup;
+  animation-duration: 1s;
+  position: absolute;
+  bottom: 70px;
+}
+
+#submit:active {
+  background-color: white;
+  color: black;
+  border: 4px solid black;
+  outline: none;
+}
+
+#submit p:active {
+  color: black;
+  outline: none;
+}
+
+@keyframes popup {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 70px;
+  }
+}
+@keyframes popupstart {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    top: 50px;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+#thank {
+  font-size: 20px;
+  margin: 0 auto;
+  width: 60%;
+  height: 70%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: white 2px solid;
+  display: none;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  border-radius: 10px;
+  border: 2px white solid;
+  align-items: center;
+  z-index: 10;
+}

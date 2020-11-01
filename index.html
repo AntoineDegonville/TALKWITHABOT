@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Contact</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  <body>
+<div class="start">
+  <button id="startbutton" onfocus="document.getElementById('qa1').style.display = 'flex'"> <p>START</p>  </button>
+</div>
+    <!--                   QUESTION 1               -->
+<section> 
+  <form id="myForm">
+  <audio id="audio" src="assets/sound/TypeWrite [2020-10-31 195542] (online-audio-converter.com).mp3"></audio>
+  <audio id="audio1" src="./assets/sound/bleepMachine.mp3" ></audio>
+    <div class="container"> 
+      <div id="qa1"><div id="question1"></div><div class="answer">
+        <input id="input1" type="text"
+        name="Firstname"
+        id="Firstname"
+        placeholder="..."
+        maxlength="100"></div></div>
+    </div>
+    <button type="button" id="next1button" onfocus="document.getElementById('qa2').style.display = 'flex'"> <p>NEXT</p>  </button>
+        <!--                   QUESTION 2               -->
+    <div class="container"> 
+      <div id="qa2"><div id="question2"></div><div class="answer">
+        <input id="input2" type="text"
+        name="Firstname"
+        id="Firstname"
+        placeholder="..."
+        maxlength="100"></div></div>
+    </div>
+    <button type="button" id="next2button" onfocus="document.getElementById('qa3').style.display = 'flex'"> <p>NEXT</p>  </button>
+        <!--                   QUESTION 3               -->  
+      <div class="container"> 
+        <div id="qa3"><div id="question3"></div><div class="answer">
+          <textarea placeholder="..." name="" id="input3" cols="30" rows="10"></textarea></div></div>
+      </div>
+      <div class="submit"><button type="submit" onfocus="document.getElementById('thank').style.display = 'flex' " id="submit" type="submit" style="visibility: hidden;">SUBMIT</button ></div>
+      </form>
+        </section>  
+        <div class="footer">
+          <div id="thank"> <p>Thank's you for your e-mail, I'll ask you more information soon.</p> </div>
+       </div> 
+        
+  </body>
+  <script src= "assets/main.js"></script>
+</html>
+
