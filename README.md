@@ -22,6 +22,3 @@ If you'd like to contribute, please fork the repository and use a feature branch
 5. Create a new Pull Request
 
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
