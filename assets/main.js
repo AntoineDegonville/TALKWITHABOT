@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       email: document.querySelector("#input2").value,
       message: document.querySelector("#input3").value,
     };
-    console.log(data);
     const response = await axios.post(
       "https://backendformulaire.herokuapp.com/",
       data
