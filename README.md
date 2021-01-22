@@ -10,6 +10,13 @@
 <br />
 Online demo : https://talkwithabot.netlify.app/
 
+This is a pure Vanilla JS project.
+
+## Languages
+
+-Javascript
+-HTML
+-CSS
 
 ## Contributing
 
